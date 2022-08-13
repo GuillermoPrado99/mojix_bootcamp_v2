@@ -40,7 +40,7 @@ print(a) '''
 st.code(code3, language='python')
 st.write(" Output ")
 res3 = ''' !dlrow olleh '''
-st.code(code3, language='python')
+st.code(res3, language='python')
 
 st.subheader(" 4. Merging two dictionaries ")
 st.write(" This amazing trick will help you merge two dictionaries with just 1 line of code. We just need to use ** in front of the name of the two dictionaries like below two merge them into a single dictionary: ")
