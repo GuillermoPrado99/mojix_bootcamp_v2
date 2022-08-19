@@ -22,8 +22,7 @@ st.markdown("---")
 
 #df_expected.sample(2).T
 #df_expected.shape
-df_1 = df_expected["Retail_Product_SKU"].nunique()
-st.write(df_1)
+#df_expected["Retail_Product_SKU"].nunique()
 
   # Counted Transformation
 
@@ -71,5 +70,7 @@ st.write(df_1)
 #df_discrepancy.describe()
 #df_discrepancy.shape
 #df_discrepancy[df_discrepancy["Diff"].isnull()]
+
+st.markdown("---")
 
 st.caption('by Guillermo Prado')
