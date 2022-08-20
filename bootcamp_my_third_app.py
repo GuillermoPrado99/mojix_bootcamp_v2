@@ -35,8 +35,8 @@ st.markdown("---")
 #df_counted.sample(2).T
 #df_counted.shape
 #df_counted['RFID'].nunique()
-df_counted = df_counted.drop_duplicates("RFID")
-st.write('Before merging the counted and expected database, its important to use ".drop_duplicates" to remove duplicates from the dataframe. In this case, its used to remove the duplicates from RFID variable in counted database.')
+df_counted = df_counted.drop_duplicates("RFID")     # Before merging the counted and expected database, its necessary to use ".drop_duplicates" to remove duplicates from the dataframe. In this case, its used to remove the duplicates from RFID variable in counted database.
+
 df_B = df_counted.groupby("Retail_Product_SKU").count()[["RFID"]].reset_index().rename(columns={"RFID":"Retail_CCQTY"})
 #df_B.sample(10)
 my_cols_selected = ["Retail_Product_Color", "Retail_Product_Level1", "Retail_Product_Level1Name", "Retail_Product_Level2Name", "Retail_Product_Level3Name", "Retail_Product_Level4Name", "Retail_Product_Name", "Retail_Product_SKU", "Retail_Product_Size", "Retail_Product_Style", "Retail_SOHQTY"]
