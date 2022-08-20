@@ -8,17 +8,17 @@ st.title('Stock / Inventory Discrepancy')
   # - Aggregate
   # - Merge 2 datasets
 
-st.markdown("---")
+#st.markdown("---")
 
-st.write('Expected')
+#st.write('Expected')
 df_expected = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Expected.csv", encoding="latin-1", dtype=str)
-st.dataframe(df_expected)
+#st.dataframe(df_expected)
 
-st.markdown("---")
+#st.markdown("---")
 
-st.write('Counted')
+#st.write('Counted')
 df_counted = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Counted.csv", encoding="latin-1", dtype=str)
-st.dataframe(df_counted)
+#st.dataframe(df_counted)
 
 st.markdown("---")
 
