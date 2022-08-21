@@ -1,12 +1,7 @@
 import streamlit as st
 import pandas as pd
-#import seaborn as sns
-#import matplotlib.pyplot as plt
 
 st.title('Stock / Inventory Discrepancy')
-  # - Remove dups
-  # - Aggregate
-  # - Merge 2 datasets
 
 st.markdown("---")
 
@@ -22,8 +17,6 @@ st.dataframe(df_counted)
 
 st.markdown("---")
 
-#df_expected.sample(2).T
-#df_expected.shape
 #df_expected["Retail_Product_SKU"].nunique()
 
 
