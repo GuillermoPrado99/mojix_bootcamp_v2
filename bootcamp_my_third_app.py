@@ -18,10 +18,6 @@ st.markdown("---")
 
 st.header('Plotting Expected / Counted Products')
 
-fig2 = plt.figure(figsize = (10, 4))
-ax.barh(Retail_Product_Level1Name, data = df_counted)
-st.pyplot(fig2)
-
 st.markdown("---")
 
 st.caption('by Guillermo Prado')
