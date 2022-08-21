@@ -21,7 +21,7 @@ st.subheader('Expected')
 df1 = df_expected['Retail_Product_Level1Name'].value_counts()
 st.bar_chart(df1)
 
-st.write('Before plotting counted case, its necessary to remove the duplicates')
+st.write('Before plotting counted case, its necessary to remove the duplicates.')
 df_counted_r = df_counted.drop_duplicates("RFID")
 
 st.subheader('Counted')
