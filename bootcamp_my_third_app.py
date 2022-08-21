@@ -17,12 +17,6 @@ st.dataframe(df_counted)
 
 st.markdown("---")
 
-#df_expected["Retail_Product_SKU"].nunique()
-
-
-
-
-
 #st.subheader('Counted Transformation')
 
 #df_counted.sample(2).T
