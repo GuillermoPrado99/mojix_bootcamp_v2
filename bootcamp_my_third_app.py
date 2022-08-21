@@ -5,11 +5,11 @@ st.title('Stock / Inventory Discrepancy')
 
 st.header('Presenting the Expected / Counted Databases')
 
-st.write('Expected')
+st.subheader('Expected')
 df_expected = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Expected.csv", encoding="latin-1", dtype=str)
 st.dataframe(df_expected)
 
-st.write('Counted')
+st.subheader('Counted')
 df_counted = pd.read_csv("https://storage.googleapis.com/mojix-devops-wildfire-bucket/analytics/bootcamp_2_0/Bootcamp_DataAnalysis_Counted.csv", encoding="latin-1", dtype=str)
 st.dataframe(df_counted)
 
