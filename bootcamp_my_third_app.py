@@ -3,7 +3,7 @@ import pandas as pd
 
 st.title('Stock / Inventory Discrepancy')
 
-st.subheader('Presenting the Stock / Inventory Databases')
+st.header('Presenting the Expected / Counted Databases')
 
 st.markdown("---")
 
