@@ -17,9 +17,13 @@ st.markdown("---")
 
 st.header('Plotting Expected / Counted Products')
 
-df_expected[Product] = Retail_Product_Level1Name
-df1 = df_expected['Product'].value_counts()
+st.subheader('Expected')
+df1 = df_expected['Retail_Product_Level1Name'].value_counts()
 st.bar_chart(df1)
+
+st.subheader('Counted')
+df2 = df_counted['Retail_Product_Level1Name'].value_counts()
+st.bar_chart(df2)
 
 st.markdown("---")
 
