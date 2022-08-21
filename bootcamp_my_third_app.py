@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 
 st.title('Stock / Inventory Discrepancy')
 
@@ -17,6 +16,9 @@ st.dataframe(df_counted)
 st.markdown("---")
 
 st.header('Plotting Expected / Counted Products')
+
+df1 = df_expected['Retail_Product_Level1Name'].value_counts()
+st.bar_chart(df1)
 
 st.markdown("---")
 
