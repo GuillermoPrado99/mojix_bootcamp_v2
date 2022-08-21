@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 st.title('Stock / Inventory Discrepancy')
 
@@ -17,7 +19,13 @@ st.markdown("---")
 
 st.header('Plotting Expected / Counted Products')
 
+fig1 = plt.figure(figsize = (10, 4))
+sns.countplot(x = 'Retail_Product_Level1Name', data = df_expected)
+st.pyplot(fig1)
 
+fig2 = plt.figure(figsize = (10, 4))
+sns.countplot(x = 'Retail_Product_Level1Name', data = df_counted)
+st.pyplot(fig2)
 
 st.markdown("---")
 
