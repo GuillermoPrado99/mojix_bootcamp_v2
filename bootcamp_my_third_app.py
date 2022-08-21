@@ -28,6 +28,8 @@ st.subheader('Counted')
 df2 = df_counted_r['Retail_Product_Level1Name'].value_counts()
 st.bar_chart(df2)
 
+st.write('Unlike the expected case, the counted case has one more bar that corresponds to "LAR-TEXTIL", suggesting that there is a difference between the products in each case.')
+
 st.markdown("---")
 
 st.caption('by Guillermo Prado')
